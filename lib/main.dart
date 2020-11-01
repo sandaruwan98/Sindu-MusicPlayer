@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'sinduHome.dart';
+import 'sindu_home.dart';
 
 void main() => runApp(SinduApp());
 
@@ -8,7 +8,13 @@ class SinduApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SinduHome(),
+      theme: ThemeData(
+        primaryColor: Color(0xff001646),
+        scaffoldBackgroundColor: Color(0xff001646),
+      ),
+      home: SafeArea(
+          child: SinduHome()
+      )
     );
   }
 }
