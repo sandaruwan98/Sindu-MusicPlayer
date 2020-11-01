@@ -43,7 +43,6 @@ class _SinduHomeState extends State<SinduHome> {
           ),
         ],
         currentIndex: _currentIndex,
-        selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
       ),
     );

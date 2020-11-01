@@ -11,6 +11,11 @@ class SinduApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xff001646),
         scaffoldBackgroundColor: Color(0xff001646),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+            selectedItemColor: Colors.amber[800],
+            unselectedItemColor: Colors.white,
+            backgroundColor: Color(0xFF000020),
+        ),
       ),
       home: SafeArea(
           child: SinduHome()
